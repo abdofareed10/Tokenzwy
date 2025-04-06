@@ -88,6 +88,10 @@
       "value": "16px",
       "type": "borderRadius"
     },
+    "borderRadius-Lg": {
+      "value": "32px",
+      "type": "borderRadius"
+    },
     "backgroundColor": {
       "value": "{babyBlue}",
       "type": "color"
@@ -260,10 +264,6 @@
       "value": "{borderRadius-Lg}",
       "type": "borderRadius"
     },
-    "borderRadius-Lg": {
-      "value": "32px",
-      "type": "borderRadius"
-    },
     "loginContentShadow": {
       "value": {
         "x": "0px",
@@ -294,8 +294,6 @@
   },
   "$themes": [],
   "$metadata": {
-    "tokenSetOrder": [
-      "Option Tokens"
-    ]
+    "tokenSetOrder": ["Option Tokens"]
   }
 }
