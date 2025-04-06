@@ -161,7 +161,7 @@
       "type": "sizing"
     },
     "inputBackgroundColor": {
-      "value": "{white}",
+      "value": "{white23}",
       "type": "color"
     },
     "inputBorderColor": {
@@ -253,7 +253,7 @@
       "type": "sizing"
     },
     "loginContentBackgroundColor": {
-      "value": "{white}",
+      "value": "{white23}",
       "type": "color"
     },
     "loginContentBorderRadius": {
