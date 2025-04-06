@@ -251,12 +251,58 @@
     "value": "{sz-500}",
     "type": "sizing"
   },
-  "logoLight": {
+  "loginContentBackgroundColor": {
+    "value": "{white}",
+    "type": "color"
+  },
+  "loginContentBorderRadius": {
+    "value": "{borderRadius-Lg}",
+    "type": "borderRadius"
+  },
+  "borderRadius-Lg": {
+    "value": "32px",
+    "type": "borderRadius"
+  },
+  "loginContentShadow": {
+    "x": {
+      "value": "0px",
+      "type": "x"
+    },
+    "y": {
+      "value": "30px",
+      "type": "y"
+    },
+    "blur": {
+      "value": "90px",
+      "type": "blur"
+    },
+    "spread": {
+      "value": "0px",
+      "type": "spread"
+    },
+    "color": {
+      "value": "rgba({steelBlue}, 0.3)",
+      "type": "color"
+    },
+    "type": {
+      "value": "dropShadow",
+      "type": "type"
+    }
+  },
+  "logo-image": {
     "value": "url(../imgs/logo-light.svg)",
     "type": "asset"
   },
-  "bg-image": {
+  "background-image": {
     "value": "url(../imgs/background-image.png)",
     "type": "asset"
+  },
+  "darkBlue": {
+    "value": "#03274C",
+    "type": "color"
+  },
+  "logoColor": {
+    "value": "{darkBlue}",
+    "type": "color"
   }
 }

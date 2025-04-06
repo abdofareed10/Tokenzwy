@@ -11,9 +11,10 @@ import UIKit
 public class StyleDictionaryClass {
     public static let babyBlue = UIColor(red: 0.969, green: 0.980, blue: 1.000, alpha: 1)
     public static let backgroundColor = UIColor(red: 0.969, green: 0.980, blue: 1.000, alpha: 1)
-    public static let bgImage = "url(../imgs/background-image.png)"
+    public static let backgroundImage = "url(../imgs/background-image.png)"
     public static let bodyFontFamily = Inter
     public static let bodyTextColor = UIColor(red: 0.482, green: 0.529, blue: 0.588, alpha: 1)
+    public static let borderRadiusLg = 32px
     public static let borderRadiusMd = 16px
     public static let borderRadiusSm = 8px
     public static let borderWidthSm = 1px
@@ -27,6 +28,7 @@ public class StyleDictionaryClass {
     public static let buttonMarginY = 20px
     public static let buttonPaddingX = 20px
     public static let buttonPaddingY = 14px
+    public static let darkBlue = UIColor(red: 0.012, green: 0.153, blue: 0.298, alpha: 1)
     public static let fontSizeBody = 14px
     public static let fontSizeH1 = 40px
     public static let fontSizeH5 = 16px
@@ -57,10 +59,19 @@ public class StyleDictionaryClass {
     public static let lineHeightH1 = 48px
     public static let lineHeightH5 = 20px
     public static let lineHeightH6 = 20px
+    public static let loginContentBackgroundColor = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
+    public static let loginContentBorderRadius = 32px
     public static let loginContentPadding = 50px
+    public static let loginContentShadowBlur = 90px
+    public static let loginContentShadowColor = rgba(UIColor(red: 0.482, green: 0.529, blue: 0.588, alpha: 1), 0.3)
+    public static let loginContentShadowSpread = 0px
+    public static let loginContentShadowType = dropShadow
+    public static let loginContentShadowX = 0px
+    public static let loginContentShadowY = 30px
     public static let loginContentWidth = 500px
+    public static let logoColor = UIColor(red: 0.012, green: 0.153, blue: 0.298, alpha: 1)
     public static let logoHeight = 50px
-    public static let logoLight = "url(../imgs/logo-light.svg)"
+    public static let logoImage = "url(../imgs/logo-light.svg)"
     public static let logoMarginBottom = 50px
     public static let primaryFont = Inter
     public static let royalBlue = UIColor(red: 0.259, green: 0.396, blue: 0.929, alpha: 1)

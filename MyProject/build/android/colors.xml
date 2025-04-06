@@ -17,4 +17,8 @@
   <color name="button_disabled_text_color">#ff7b8796</color>
   <color name="button_disabled_background_color">rgba(#ff7b8796, 0.5)</color>
   <color name="text_link_color">#ff4265ed</color>
+  <color name="login_content_background_color">#ffffffff</color>
+  <color name="login_content_shadow_color">rgba(#ff7b8796, 0.3)</color>
+  <color name="dark_blue">#ff03274c</color>
+  <color name="logo_color">#ff03274c</color>
 </resources>

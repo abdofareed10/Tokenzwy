@@ -66,6 +66,17 @@
   --login-content-padding: 50px;
   --sz-500: 500px;
   --login-content-width: 500px;
-  --logo-light: url("url(../imgs/logo-light.svg)");
-  --bg-image: url("url(../imgs/background-image.png)");
+  --login-content-background-color: #ffffff;
+  --login-content-border-radius: 32px;
+  --border-radius-lg: 32px;
+  --login-content-shadow-x: 0px;
+  --login-content-shadow-y: 30px;
+  --login-content-shadow-blur: 90px;
+  --login-content-shadow-spread: 0px;
+  --login-content-shadow-color: rgba(#7b8796, 0.3);
+  --login-content-shadow-type: dropShadow;
+  --logo-image: url("url(../imgs/logo-light.svg)");
+  --background-image: url("url(../imgs/background-image.png)");
+  --dark-blue: #03274c;
+  --logo-color: #03274c;
 }
