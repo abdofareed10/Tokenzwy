@@ -1,0 +1,247 @@
+{
+  "Option Tokens": {
+    "sz-50": {
+      "$type": "sizing",
+      "$value": "50"
+    },
+    "sz-400": {
+      "$type": "sizing",
+      "$value": "400"
+    },
+    "BasicColors": {
+      "White500": {
+        "$type": "color",
+        "$value": "#ffffff",
+        "$description": "Use as White color and important white spaces"
+      },
+      "Light Gray": {
+        "$type": "color",
+        "$value": "#f2f1f1",
+        "$description": "Use as Light Grays Color"
+      },
+      "Med Gray": {
+        "$type": "color",
+        "$value": "#a7a7a7",
+        "$description": "Use as Secondary Gray color"
+      },
+      "Blue500": {
+        "$type": "color",
+        "$value": "#007dfc",
+        "$description": "Use as Primary Color"
+      }
+    },
+    "Black950": {
+      "$type": "color",
+      "$value": "#000",
+      "$description": "Use as White color and important white spaces"
+    },
+    "loginPage": {
+      "backgroundColor": {
+        "$type": "color",
+        "$value": "{BasicColors.White500}",
+        "$description": "Use as White color and important white spaces"
+      },
+      "contentPaddingTopBottom": {
+        "$type": "spacing",
+        "$value": "{sp-50}"
+      },
+      "contentPaddingLeftRight": {
+        "$type": "spacing",
+        "$value": "{sp400}"
+      },
+      "heading": {
+        "fontSize": {
+          "$type": "fontSizes",
+          "$value": "{FS H1}"
+        },
+        "fontWeight": {
+          "$type": "fontWeights",
+          "$value": "{fontWeights.inter-1}"
+        },
+        "textColor": {
+          "$type": "color",
+          "$value": "{Black950}"
+        }
+      },
+      "body": {
+        "fontFamily": {
+          "$type": "fontFamilies",
+          "$value": "{fontFamilies.inter}"
+        },
+        "fontSize": {
+          "$type": "fontSizes",
+          "$value": "{FS-Caption}"
+        },
+        "fontWeight": {
+          "$type": "fontWeights",
+          "$value": "{fontWeights.inter-2}"
+        },
+        "textColor": {
+          "$type": "color",
+          "$value": "{BasicColors.Med Gray}"
+        },
+        "spacingTop": {
+          "$type": "spacing",
+          "$value": "{sp14}"
+        }
+      },
+      "button": {
+        "backgroundColor": {
+          "$type": "color",
+          "$value": "{BasicColors.Blue500}"
+        },
+        "textColor": {
+          "$type": "color",
+          "$value": "{BasicColors.White500}"
+        },
+        "fontSize": {
+          "$type": "fontSizes",
+          "$value": "{FS Body}"
+        },
+        "paddingX": {
+          "$type": "spacing",
+          "$value": "{sp14}"
+        },
+        "paddingY": {
+          "$type": "spacing",
+          "$value": "{sp-20}"
+        },
+        "spacingTop": {
+          "$type": "spacing",
+          "$value": "{sp-40}"
+        }
+      },
+      "input": {
+        "borderWidth": {
+          "$type": "borderWidth",
+          "$value": "{br-sm}"
+        },
+        "borderColor": {
+          "$type": "color",
+          "$value": "{BasicColors.Med Gray}"
+        },
+        "backgroundColor": {
+          "$type": "color",
+          "$value": "rgba( {BasicColors.White500} ,0.8 )"
+        },
+        "paddingX": {
+          "$type": "spacing",
+          "$value": "{sp14}"
+        },
+        "paddingY": {
+          "$type": "spacing",
+          "$value": "{sp14}"
+        },
+        "placeholderColor": {
+          "$type": "color",
+          "$value": "{BasicColors.Light Gray}"
+        },
+        "fontSize": {
+          "$type": "fontSizes",
+          "$value": "{FS-Caption}"
+        },
+        "spacingBetween": {
+          "$type": "spacing",
+          "$value": "{sp-20}"
+        }
+      }
+    },
+    "logo": {
+      "color": {
+        "$type": "color",
+        "$value": "{BasicColors.Blue500}",
+        "$description": "Use as White color and important white spaces"
+      }
+    },
+    "\"Main-Shadow\"": {
+      "$type": "boxShadow",
+      "$value": {
+        "color": "#00000033",
+        "type": "dropShadow",
+        "x": "0",
+        "y": "4",
+        "blur": "12",
+        "spread": "0"
+      },
+      "$description": "This our dropshadow for cards we use to show behind the cards"
+    },
+    "fontFamilies": {
+      "inter": {
+        "$type": "fontFamilies",
+        "$value": "Inter"
+      }
+    },
+    "fontWeights": {
+      "inter-0": {
+        "$type": "fontWeights",
+        "$value": "Semi Bold"
+      },
+      "inter-1": {
+        "$type": "fontWeights",
+        "$value": "Bold"
+      },
+      "inter-2": {
+        "$type": "fontWeights",
+        "$value": "Regular"
+      },
+      "inter-3": {
+        "$type": "fontWeights",
+        "$value": "Medium"
+      }
+    },
+    "sp14": {
+      "$type": "spacing",
+      "$value": "14"
+    },
+    "sp-20": {
+      "$type": "spacing",
+      "$value": "20"
+    },
+    "sp-40": {
+      "$type": "spacing",
+      "$value": "40"
+    },
+    "sp-50": {
+      "$type": "spacing",
+      "$value": "50"
+    },
+    "sp400": {
+      "$type": "spacing",
+      "$value": "400"
+    },
+    "br-sm": {
+      "$type": "borderWidth",
+      "$value": "1"
+    },
+    "brwmed": {
+      "$type": "borderWidth",
+      "$value": "2"
+    },
+    "FS H1": {
+      "$type": "fontSizes",
+      "$value": "24"
+    },
+    "FS Body": {
+      "$type": "fontSizes",
+      "$value": "18"
+    },
+    "FS-Caption": {
+      "$type": "fontSizes",
+      "$value": "14"
+    },
+    "Border-radius-Md": {
+      "$type": "borderRadius",
+      "$value": "16"
+    },
+    "Border-radius-sm": {
+      "$type": "borderRadius",
+      "$value": "8"
+    }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "Option Tokens"
+    ]
+  }
+}
