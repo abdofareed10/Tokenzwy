@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 body {
-  background-color: $background-color;
+  background-color: $baby-blue;
   margin: 0px;
 }
 
@@ -43,9 +43,9 @@ form {
   margin-top: $input-group-margin-top;
 }
 
-.form-group {
-  // margin-bottom: 0px;
-}
+// .form-group {
+//   // margin-bottom: 0px;
+// }
 
 #email {
   border-radius: 0px;
