@@ -294,6 +294,8 @@
   },
   "$themes": [],
   "$metadata": {
-    "tokenSetOrder": ["Option Tokens"]
+    "tokenSetOrder": [
+      "Option Tokens"
+    ]
   }
 }
