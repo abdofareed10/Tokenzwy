@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly, this file was auto-generated.
+-->
+<resources>
+  <color name="white">#ffffffff</color>
+  <color name="baby_blue">#fff7faff</color>
+  <color name="steel_blue">#ff7b8796</color>
+  <color name="royal_blue">#ff4265ed</color>
+  <color name="background_color">#fff7faff</color>
+  <color name="heading_textcolor">#ff7b8796</color>
+  <color name="body_text_color">#ff7b8796</color>
+  <color name="input_text_color">#ff7b8796</color>
+  <color name="input_background_color">#ffffffff</color>
+  <color name="input_border_color">rgba(#ff7b8796, 0.5)</color>
+  <color name="button_disabled_text_color">#ff7b8796</color>
+  <color name="button_disabled_background_color">rgba(#ff7b8796, 0.5)</color>
+  <color name="text_link_color">#ff4265ed</color>
+</resources>
