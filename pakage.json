@@ -6,7 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "scripts": {
+    "watch": "nodemon --watch MyProject/tokens/global.json --exec \"npx style-dictionary build && sass MyProject/scss/style.scss MyProject/build/css/style.css && git add . && git commit -m 'chore: Update generated files' && git push\""
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
+
 }
