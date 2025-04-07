@@ -1,0 +1,42 @@
+name: Build Style Dictionary and Compile SCSS
+
+on:
+  push:
+    paths:
+      - 'MyProject/tokens/Global.json' # يشتغل لما يحصل تغيير في global.json
+      - 'MyProject/scss/style.scss' # يشتغل لما يحصل تغيير في style.scss
+
+jobs:
+  build-and-compile:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout للـ Repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # تثبيت Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      # تثبيت الـ Dependencies (style-dictionary و sass)
+      - name: Install Dependencies
+        run: npm install style-dictionary sass
+        working-directory: MyProject # بنشتغل جوا مجلد MyProject
+
+      # تشغيل Style Dictionary Build
+      - name: Run Style Dictionary Build
+        run: npx style-dictionary build
+        working-directory: MyProject
+
+      # تحويل SCSS لـ CSS باستخدام sass
+      - name: Compile SCSS to CSS
+        run: npx sass scss/style.scss build/css/style.css
+        working-directory: MyProject
+
+      # عمل Commit و Push للتغييرات
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'chore: Update generated SCSS and CSS files'
