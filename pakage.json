@@ -4,13 +4,17 @@
   "description": "This example code is bare-bones to show you what this framework can do. If you have the style-dictionary module installed globally, you can `cd` into this directory and run:",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "scripts": {
-    "watch": "nodemon --watch MyProject/tokens/global.json --exec \"npx style-dictionary build && sass MyProject/scss/style.scss MyProject/build/css/style.css && git add . && git commit -m 'chore: Update generated files' && git push\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --watch MyProject/tokens/global.json --watch MyProject/scss/style.scss --exec \"npx style-dictionary build && npx sass MyProject/scss/style.scss MyProject/build/css/style.css && git add . && git commit -m 'chore: Update generated files' && git push || echo 'Push failed, please check your Git configuration.'\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
-
+  "license": "ISC",
+  "dependencies": {
+    "style-dictionary": "^3.9.2",
+    "sass": "^1.77.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
 }
