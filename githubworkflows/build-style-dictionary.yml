@@ -3,7 +3,7 @@ name: Build Style Dictionary and Compile SCSS
 on:
   push:
     paths:
-      - 'MyProject/tokens/Global.json' # يشتغل لما يحصل تغيير في global.json
+      - 'MyProject/tokens/global.json' # يشتغل لما يحصل تغيير في global.json
       - 'MyProject/scss/style.scss' # يشتغل لما يحصل تغيير في style.scss
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
       # تثبيت الـ Dependencies (style-dictionary و sass)
       - name: Install Dependencies
         run: npm install style-dictionary sass
-        working-directory: MyProject # بنشتغل جوا مجلد MyProject
+        working-directory: MyProject
 
       # تشغيل Style Dictionary Build
       - name: Run Style Dictionary Build
