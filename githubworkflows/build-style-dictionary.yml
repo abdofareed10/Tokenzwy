@@ -1,4 +1,4 @@
-name: Build Style Dictionary and Compile SCSS
+name: Build Style Dictionary, Compile SCSS, and Deploy to GitHub Pages
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
       - 'MyProject/scss/style.scss' # يشتغل لما يحصل تغيير في style.scss
 
 jobs:
-  build-and-compile:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       # Checkout للـ Repository
@@ -25,6 +25,13 @@ jobs:
         run: npm install style-dictionary sass
         working-directory: MyProject
 
+      # حذف الملفات القديمة في build/ (Overwrite)
+      - name: Clean Build Directory
+        run: |
+          rm -rf build/scss/*
+          rm -rf build/css/*
+        working-directory: MyProject
+
       # تشغيل Style Dictionary Build
       - name: Run Style Dictionary Build
         run: npx style-dictionary build
@@ -40,3 +47,19 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'chore: Update generated SCSS and CSS files'
+          file_pattern: 'MyProject/build/**/*'
+
+      # تحضير الملفات للـ Deploy
+      - name: Prepare Files for Deploy
+        run: |
+          mkdir -p public
+          cp MyProject/index.html public/
+          cp -r MyProject/build/css public/
+          cp -r MyProject/imgs public/
+
+      # رفع الملفات على GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: public
