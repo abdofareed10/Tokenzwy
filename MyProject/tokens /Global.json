@@ -185,7 +185,7 @@
       "type": "spacing"
     },
     "inputBorderRadius": {
-      "value": "{borderRadius-Sm}",
+      "value": "{borderRadius-Md}",
       "type": "borderRadius"
     },
     "buttonDisabledTextColor": {
