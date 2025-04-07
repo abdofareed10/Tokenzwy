@@ -8,7 +8,7 @@
       "value": "400px",
       "type": "sizing"
     },
-    "white2": {
+    "white": {
       "value": "#ffffff",
       "type": "color"
     },
@@ -228,12 +228,12 @@
       "value": "{sp-14}",
       "type": "spacing"
     },
-    "logoMarginBottom": {
-      "value": "{sp-50}",
-      "type": "spacing"
-    },
     "headingPaddingBottom": {
       "value": "{sp-20}",
+      "type": "spacing"
+    },
+    "logoMarginBottom": {
+      "value": "{sp-50}",
       "type": "spacing"
     },
     "inputGroupMarginTop": {
